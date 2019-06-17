@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="Cool_Music.VideoPlayer"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Cool_Music"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="Black">
+        <MediaElement x:Name="media" PosterSource="Assets/ggg.jpg"  Width="auto"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="Black" Width="auto">
+            <AppBarButton Icon="OpenFile" Label="Open File" Name="openFile" Click="openFile_Click"/>
+            <AppBarButton Icon="Play" Label="Play" Name="playBTN" Click="playBTN_Click"/>
+            <AppBarButton Icon="Pause" Label="Pause" Name="pauseBTN" Click="pauseBTN_Click"/>
+            <AppBarButton Icon="Stop" Label="Stop" Name="stopBTN" Click="stopBTN_Click"/>
+            <AppBarButton Icon="Back" Label="Backward" Name="back" Click="back_Click"/>
+            <AppBarButton Icon="Forward" Label="Forward" Name="forward" Click="forward_Click"/>
+            <AppBarButton Icon="Mute" Label="Mute" Name="mute" Click="mute_Click"/>
+            <AppBarButton Icon="Volume" Label="Volume -" Name="volumeMinus" Click="volumeMinus_Click"/>
+            <AppBarButton Icon="Volume" Label="Volume +" Name="volumePlus" Click="volumePlus_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>
